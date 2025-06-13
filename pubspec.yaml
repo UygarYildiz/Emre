@@ -1,0 +1,54 @@
+name: harry_potter_app
+description: A Flutter app that displays Harry Potter characters using the HP API.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  flutter_hooks: ^0.20.3
+  hooks_riverpod: ^2.4.9
+  
+  # HTTP
+  dio: ^5.3.3
+  
+  # JSON & Code Generation
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  
+  # UI
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  
+  # Utils
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  
+  # Code Generation
+  build_runner: ^2.4.7
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700 
